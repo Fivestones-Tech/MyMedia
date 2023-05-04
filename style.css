@@ -417,12 +417,26 @@ main .container .left .profile{
      margin-left: 0.5rem;
  }
   
+ /* ///////====container right===============////// */
+ main .container .right {
+     height: max-content;
+     position: sticky;
+     top: var(--sticky-top-right);
+     bottom: 0;
+ }
  
+ .right .messages {
+     background: var(--color-white);
+     border-radius: var(--card-border-radius);
+     padding: var(--card-padding);
+ }
  
- 
- 
- 
- 
+ .right .messages .heading{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 1rem;
+ }
  
  
  
