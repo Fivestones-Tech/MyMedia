@@ -164,7 +164,7 @@ main .container .left .profile{
     position: relative;
 }
 
-.left .sidebar .menu-item {
+.left .sidebar .menu-item:hover {
     background: var(--color-light);
 }
 
@@ -184,7 +184,7 @@ main .container .left .profile{
     border-radius: 0.8rem;
     position: absolute;
     top: -0.2rem;
-    right: -3rem;
+    right: -0.3rem;
 }
 
 .left .sidebar h3{
@@ -303,33 +303,40 @@ main .container .left .profile{
  }
  
  .middle .stories .story:nth-child(1) {  
-     background-image: url('images/matthew4.jpg')
-     no-repeat center center/cover;  
+     background-image: url(images/matthew4.jpeg); 
+     background-image: no repeat;
+     background-position: center; 
  }
  
+ 
  .middle .stories .story:nth-child(2) {  
-    background-image: url('images/matthew4.jpg')
-    no-repeat center center/cover;  
+    background-image: url(images/matthew3.jpeg);
+    background-image: no repeat;
+    background-position: cover;
 }
  
 .middle .stories .story:nth-child(3) {  
-    background-image: url('images/matthew4.jpg')
-    no-repeat center center/cover;  
+    background-image: url(images/love&debby.jpeg); 
+    background-image: no repeat;
+    background-position: center; 
 }
 
 .middle .stories .story:nth-child(4) {  
-    background-image: url('images/matthew4.jpg')
-    no-repeat center center/cover;  
+    background-image: url(images/loveimage.jpeg);  
+    background-image: no repeat;
+    background-position: center;
 }
 
 .middle .stories .story:nth-child(5) {  
-    background-image: url('images/matthew4.jpg')
-    no-repeat center center/cover;  
+    background-image: url(images/loveimage2.jpeg); 
+    background-image: no repeat;
+    background-position: center; 
 }
 
 .middle .stories .story:nth-child(6) {  
-    background-image: url('images/matthew4.jpg')
-    no-repeat center center/cover;  
+    background-image: url(images/matthew4.jpeg);  
+    background-image: no repeat;
+    background-position: center;
 }    
  
  .middle .story .profile-photo {
@@ -535,15 +542,62 @@ main .container .left .profile{
  }
  
  
+ /* /==================theme customization============/ */
+ .customize-theme{
+     background: rgba(255, 255, 255, 0.5);
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 100;
+     text-align: center;
+     display: grid;
+     place-items: center;
+     font-size: 0.9rem;
+ }
  
+ .customize-theme .card{
+     background: var(--color-white);
+     padding: 3rem;
+     border-radius: var(--card-border-radius);
+     width: 50%;
+ }
+ /* ///////////================.font-size============// */
+ .customize-theme .font-size{
+     margin-top: 5rem;
+ }
  
+ .customize-theme .font-size > div {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: var(--color-light);
+     padding: var(--search-padding);
+     border-radius: var(--card-border-radius);
+ }
  
+ .customize-theme .choose-size {
+     background: var(--color-secondary);
+     height: 0.3rem;
+     width: 100%;
+     margin: 0 1rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
  
+ .customize-theme .choose-size span {
+     width: 1rem;
+     height: 1rem;
+     background: var(--color-secondary);
+     border-radius: 50%;
+     cursor: pointer;
+ }
  
- 
- 
- 
- 
+ .customize-theme .choose-size span:active{
+     background: 
+ }
  
  
  
